@@ -4,9 +4,9 @@ import { FaUser, FaPhone } from 'react-icons/fa';
 import { deleteContact } from '../../redux/contactsSlice';
 import CustomButton from '../CustomButton/CustomButton';
 import { CAPTION_DELETE } from '../../js/constants';
-import styles from './ContactItem.module.css';
+import styles from './Contact.module.css';
 
-const ContactItem = ({ contact: { id, name, number } }) => {
+const Contact = ({ contact: { id, name, number } }) => {
   const dispatch = useDispatch();
 
   const handleDeleteItem = () => {
@@ -30,4 +30,4 @@ const ContactItem = ({ contact: { id, name, number } }) => {
   );
 };
 
-export default ContactItem;
+export default Contact;
